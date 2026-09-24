@@ -1,0 +1,246 @@
+<div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content nexora-modal">
+
+
+            <!-- ================= HEADER ================= -->
+
+            <div class="modal-header border-0">
+
+                <h5 class="modal-title">
+                    <i class="bi bi-send-check me-2"></i>
+                    Apply for this job
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+
+            </div>
+
+
+
+            <!-- ================= BODY ================= -->
+
+            <div class="modal-body">
+
+                <p class="apply-company-line mb-4">
+                    You're applying to
+                    <strong id="applyCompanyName">—</strong>
+                </p>
+
+
+                <!-- ================= HIDDEN JOB DATA ================= -->
+
+                <input
+                    type="hidden"
+                    id="applyCategory"
+                >
+
+                <input
+                    type="hidden"
+                    id="applySalary"
+                >
+
+                <input
+                    type="hidden"
+                    id="applyJob"
+                >
+
+
+
+                <!-- ================= FULL NAME ================= -->
+
+                <div class="mb-3">
+
+                    <label
+                        for="applicantName"
+                        class="form-label"
+                    >
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="applicantName"
+                        placeholder="Your full name"
+                        autocomplete="name"
+                    >
+
+                </div>
+
+
+
+                <!-- ================= AGE ================= -->
+
+                <div class="mb-3">
+
+                    <label
+                        for="applicantAge"
+                        class="form-label"
+                    >
+                        Age
+                    </label>
+
+                    <input
+                        type="number"
+                        class="form-control"
+                        id="applicantAge"
+                        placeholder="Your age"
+                        min="18"
+                        max="70"
+                    >
+
+                </div>
+
+
+
+                <!-- ================= LOCATION ================= -->
+
+                <div class="mb-3">
+
+                    <label
+                        for="applicantLocation"
+                        class="form-label"
+                    >
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="applicantLocation"
+                        placeholder="Your city"
+                        autocomplete="address-level2"
+                    >
+
+                </div>
+
+
+
+                <!-- ================= EMAIL ================= -->
+
+                <div class="mb-3">
+
+                    <label
+                        for="applicantEmail"
+                        class="form-label"
+                    >
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="applicantEmail"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                    >
+
+                </div>
+
+
+
+                <!-- ================= PROFILE PHOTO ================= -->
+
+                <div class="mb-3">
+
+                    <label
+                        for="applicantPhoto"
+                        class="form-label"
+                    >
+                        Profile Photo
+                    </label>
+
+
+                    <div class="photo-upload-box">
+
+
+                        <div class="photo-upload-icon">
+
+                            <i class="bi bi-person-circle"></i>
+
+                        </div>
+
+
+                        <div class="photo-upload-content">
+
+                            <label
+                                for="applicantPhoto"
+                                class="photo-upload-label"
+                            >
+                                Choose Profile Photo
+                            </label>
+
+                            <small>
+                                Upload a clear personal photo.
+                            </small>
+
+                        </div>
+
+
+                        <input
+                            type="file"
+                            class="photo-file-input"
+                            id="applicantPhoto"
+                            accept="image/*"
+                        >
+
+                    </div>
+
+
+                    <!-- Selected Photo -->
+
+                    <div
+                        id="selectedPhotoName"
+                        class="selected-photo-name"
+                    ></div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= FOOTER ================= -->
+
+            <div class="modal-footer border-0">
+
+
+                <button
+                    type="button"
+                    class="btn btn-nexora-outline"
+                    data-bs-dismiss="modal"
+                >
+                    Cancel
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-nexora"
+                    id="submitApplicationBtn"
+                >
+
+                    <i class="bi bi-send-check me-2"></i>
+
+                    Submit Application
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
