@@ -175,7 +175,7 @@ function initLogin() {
                 () => {
 
                     window.location.href =
-                        "/home.html";
+                        "./home.html";
 
                 },
                 500
@@ -272,7 +272,7 @@ function loadNavbar() {
     }
 
 
-    fetch("/navbar.html")
+    fetch("./navbar.html")
 
         .then(
             function(response) {
@@ -326,7 +326,7 @@ function loadApplyModal() {
     }
 
 
-    fetch("/apply-modal.html")
+    fetch("./apply-modal.html")
 
         .then(
             function(response) {
@@ -1070,7 +1070,7 @@ function setupApplyModal() {
                 ----------------------------------------- */
 
                 window.location.href =
-                    "/home.html";
+                    "./home.html";
 
             } catch (error) {
 
