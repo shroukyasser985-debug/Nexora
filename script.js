@@ -1,6 +1,6 @@
 /* =========================================================
    NEXORA JAVASCRIPT
-   Cleaned & Fixed Version
+   GitHub Pages Ready
 ========================================================= */
 
 const APPLICANTS_KEY = "nexoraApplicants";
@@ -169,6 +169,7 @@ function initLogin() {
 
             /* ---------------------------------------------
                GO TO HOME
+               Relative path for GitHub Pages
             --------------------------------------------- */
 
             window.setTimeout(
@@ -272,6 +273,10 @@ function loadNavbar() {
     }
 
 
+    /* ---------------------------------------------
+       Relative path for GitHub Pages
+    --------------------------------------------- */
+
     fetch("./navbar.html")
 
         .then(
@@ -325,6 +330,10 @@ function loadApplyModal() {
         return;
     }
 
+
+    /* ---------------------------------------------
+       Relative path for GitHub Pages
+    --------------------------------------------- */
 
     fetch("./apply-modal.html")
 
@@ -1525,8 +1534,10 @@ function fillEditModal({
 
 
     if (photoInput) {
+
         photoInput.value =
             "";
+
     }
 
 
@@ -2427,7 +2438,6 @@ function initApplicantActions() {
     document.addEventListener(
         "click",
         function(event) {
-
 
             const editButton =
                 event.target.closest(
